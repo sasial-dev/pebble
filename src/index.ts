@@ -1,2 +1,5 @@
 import "./vide";
-export * from "./pebble";
+
+import pebble from "./pebble";
+
+export = pebble;

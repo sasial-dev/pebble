@@ -6,10 +6,10 @@
 		
 		"ReplicatedStorage": {
 			"packages": {
-				"$path": "Packages",
+				"$className": "Folder",
 
 				"pebble": {
-					"$path": "src"
+					"$path": "out"
 				}
 			}
 		}
