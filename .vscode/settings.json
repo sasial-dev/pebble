@@ -10,7 +10,7 @@
     "LuauVisitRecursionLimit": "0",
     "LuauParseDeclareClassIndexer": "true",
     "LuauLoopControlFlowAnalysis": "true"
-  }
-
-
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
+	"files.eol": "\n"
 }
