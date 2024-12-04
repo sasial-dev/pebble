@@ -3,13 +3,8 @@ import Vide from "@rbxts/vide"
 interface TablesheetProps<T> {
 	size?: UDim2 | (() => UDim2),
 
-	/**
-	 * the size of each column in pixels
-	*/
-	column_sizes: () => number[],
-
+	base_splits: number[],
 	column: () => T[][],
-	max_characters_per_column?: number,
 
 	on_click: (column: number, row: number) => void,
 	on_click2: (column: number, row: number) => void,
