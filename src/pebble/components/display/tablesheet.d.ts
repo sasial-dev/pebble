@@ -2,8 +2,9 @@ import Vide from "@rbxts/vide"
 
 interface TablesheetProps<T> {
 	size?: UDim2 | (() => UDim2),
+	suggested_column_sizes?: number[],
 
-	base_splits: number[],
+	base_splits?: number[],
 	column: () => T[][],
 
 	on_click: (column: number, row: number) => void,
