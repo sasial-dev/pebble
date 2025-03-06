@@ -6,7 +6,8 @@ interface Pebble {
 	typography: typeof import("./components/display/typography"),
 	tablesheet: typeof import("./components/display/tablesheet"),
 	accordion: typeof import("./components/display/accordion"),
-	divider: typeof import("./components/display/divider")
+	divider: typeof import("./components/display/divider"),
+	checkbox: typeof import("./components/display/checkbox"),
 
 	bargraph: typeof import("./components/graph/bargraph"),
 	graph: typeof import("./components/graph/graph"),

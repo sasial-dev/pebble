@@ -77,6 +77,7 @@ return function(props: props)
     return create "TextButton" {
 
         Name = props.text,
+        AutoLocalize = false,
 
         Size = props.size or UDim2.fromOffset(100, 30),
         Position = props.position,
@@ -98,7 +99,6 @@ return function(props: props)
 
             position = UDim2.fromScale(0.5, 0.5),
             anchorpoint = Vector2.new(0.5, 0.5),
-            size = UDim2.fromScale(1, 1),
             automaticsize = Enum.AutomaticSize.XY,
 
             text = props.text,
@@ -112,7 +112,11 @@ return function(props: props)
                 return read(props.text) ~= ""
             end,
 
-            code = props.code
+            code = props.code,
+
+            create "UIFlexItem" {
+                FlexMode = Enum.UIFlexMode.Fill
+            }
 
         },
 
